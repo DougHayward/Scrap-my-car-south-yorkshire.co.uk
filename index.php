@@ -13,9 +13,9 @@
 </head>
 <body>
 <div class="navbar-fixed">
-    <nav class="red accent-4" role="navigation">
+    <nav class="blue accent-2" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo yellow-text">Scrap my Car</a>
+            <a id="logo-container" href="#" class="brand-logo white-text">Scrap my Car<br><small>South Yorkshire</small></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#we-buy-cars">We Buy Cars</a></li>
                 <li><a href="#about-us">About Us</a></li>
@@ -25,7 +25,7 @@
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="#we-buy-cars">We Buy Cars</a></li>
                 <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact-us">Get In Touch</a></li>
+                <li><a href="#contact-us">Get a Quote</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -35,13 +35,13 @@
     <div class="section no-pad-bot">
         <div class="container">
             <br><br>
-            <h1 class="header center yellow-text text-darken-1">We Buy Scrap Cars in South Yorkshire</h1>
+            <h1 class="header center blue-text text-darken-4 flow-text">We Buy Scrap Cars in South Yorkshire</h1>
             <div class="row center">
-                <h5 class="header col s12 grey-text text-darken-2">Call us now on 01234 123 123, or</h5>
+                <h5 class="header col s12 grey-text">Call us now on 01234 123 123, or</h5>
             </div>
             <div class="row center">
                 <a href="http://materializecss.com/getting-started.html" id="download-button"
-                   class="btn-large waves-effect waves-light red lighten-1">Get a quote Online NOW.</a>
+                   class="btn-large waves-effect waves-light blue lighten-1">Get a quote Online NOW.</a>
             </div>
             <br id="we-buy-cars"><br>
 
@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col s12 m3">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">£</i></h2>
+                    <h2 class="center blue-text text-lighten-1"><i class="material-icons">£</i></h2>
                     <h5 class="center">Best Price</h5>
                     <p class="light">As one of the best-known buyers of scrap cars in South Yorkshire we are always
                         looking to give the most for cars at the end of their life. So whether your car is accident
@@ -70,7 +70,7 @@
 
             <div class="col s12 m3">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">directions_car</i></h2>
+                    <h2 class="center blue-text text-lighten-1"><i class="material-icons">directions_car</i></h2>
                     <h5 class="center">For Cash</h5>
                     <p class="light">Do you want to scrap your car for cash in South Yorkshire? Do you want a good price
                         for your scrap car in South Yorkshire? If yes then we are here to help you to provide you with a
@@ -80,7 +80,7 @@
 
             <div class="col s12 m3">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">local_shipping</i></h2>
+                    <h2 class="center blue-text text-lighten-1"><i class="material-icons">local_shipping</i></h2>
                     <h5 class="center">Collections</h5>
                     <p class="light">We collect scrap cars, unwanted cars, accident damaged cars, MOT failures and scrap
                         commercial vehicles, and we also dispose of your vehicle in the legal way, filling out all of
@@ -92,7 +92,7 @@
             </div>
             <div class="col s12 m3">
                 <div class="icon-block">
-                    <h2 class="center brown-text"><i class="material-icons">mood</i></h2>
+                    <h2 class="center blue-text text-lighten-1"><i class="material-icons">mood</i></h2>
                     <h5 class="center">Removal</h5>
 
                     <p class="light">We offer a first class scrap car removal, collection and disposal in South
@@ -113,7 +113,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h4 class="header col s12 yellow-text">No Tax, No MOT, No Problem!</h4>
+                <h3 class="header col s12 white-text">No Tax, No MOT, No Problem!</h3>
             </div>
         </div>
     </div>
@@ -265,7 +265,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                <h5 class="header col s12 light">We will call you back!</h5>
             </div>
         </div>
     </div>
@@ -276,20 +276,22 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">Company Bio</h5>
-                <p class="grey-text text-lighten-4"></p>
+                <h5 class="white-text">Scrap my car - South Yorkshire</h5>
+                <p class="grey-text text-lighten-4">
+
+                </p>
 
 
             </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Settings</h5>
-                <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
-                </ul>
-            </div>
+<!--            <div class="col l3 s12">-->
+<!--                <h5 class="white-text">Settings</h5>-->
+<!--                <ul>-->
+<!--                    <li><a class="white-text" href="#!">Link 1</a></li>-->
+<!--                    <li><a class="white-text" href="#!">Link 2</a></li>-->
+<!--                    <li><a class="white-text" href="#!">Link 3</a></li>-->
+<!--                    <li><a class="white-text" href="#!">Link 4</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
@@ -313,7 +315,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<script src="js/smooth-scroll.js"></script>
+<!--<script src="js/smooth-scroll.js"></script>-->
 
 </body>
 </html>
