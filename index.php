@@ -19,7 +19,7 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="#we-buy-cars">We Buy Cars</a></li>
                 <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact-us">Get In Touch</a></li>
+                <li><a href="#contact-us">Get a Quote</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
@@ -27,7 +27,8 @@
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#contact-us">Get a Quote</a></li>
             </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse white-text
+"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </div>
@@ -40,7 +41,7 @@
                 <h5 class="header col s12 grey-text">Call us now on 01234 123 123, or</h5>
             </div>
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button"
+                <a href="#contact-us" id="download-button"
                    class="btn-large waves-effect waves-light blue lighten-1">Get a quote Online NOW.</a>
             </div>
             <br id="we-buy-cars"><br>
@@ -156,10 +157,11 @@
                 <p class="left-align light">
                     If you have any questions about our vehicle recycling or about anything you are not sure of we would
                     be happy to talk to you, call us on 01234 123 123.</p>
+                <a id="contact-us"></a>
             </div>
         </div>
         <hr>
-        <div class="row" id="contact-us">
+        <div class="row">
             <div class="col s12 center">
                 <h4>Get a Quote</h4>
                 <p>Fill the form out below in order to get a free no obligation quote from a member of our specialist
@@ -251,6 +253,10 @@
                                 </select>
                                 <label>Car Make</label>
                             </div>
+                            <div class="input-field col s6">
+                                <input id="model" type="text" class="validate">
+                                <label for="model">Model</label>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -265,14 +271,14 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h5 class="header col s12 light">We will call you back!</h5>
+                <h3 class="header col s12 light blue-grey">We will <br> call you back!</h3>
             </div>
         </div>
     </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
 
-<footer class="page-footer teal">
+<footer class="page-footer blue">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
@@ -305,7 +311,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+            Made by <a class="brown-text text-lighten-3">Yorks-Design</a>
         </div>
     </div>
 </footer>
@@ -315,7 +321,7 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
-<!--<script src="js/smooth-scroll.js"></script>-->
+<script src="js/smooth-scroll.js"></script>
 
 </body>
 </html>
