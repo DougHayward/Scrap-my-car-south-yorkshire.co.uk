@@ -68,3 +68,8 @@ footer.page-footer {
 .brand-logo small {
     font-size: 60%;
 }
+
+.transparency{
+    padding: 15px !important;
+    background-color: rgba(0, 1, 76, 0.6);
+}

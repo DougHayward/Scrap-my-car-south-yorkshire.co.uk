@@ -15,7 +15,9 @@
 <div class="navbar-fixed">
     <nav class="blue accent-2" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo white-text">Scrap my Car<br><small>South Yorkshire</small></a>
+            <a id="logo-container" href="#" class="brand-logo white-text">Scrap my Car<br>
+                <small>South Yorkshire</small>
+            </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#we-buy-cars">We Buy Cars</a></li>
                 <li><a href="#about-us">About Us</a></li>
@@ -36,27 +38,23 @@
     <div class="section no-pad-bot">
         <div class="container">
             <br><br>
-            <h1 class="header center blue-text text-darken-4 flow-text">We Buy Scrap Cars in South Yorkshire</h1>
-            <div class="row center">
-                <h5 class="header col s12 grey-text">Call us now on 01234 123 123, or</h5>
-            </div>
+            <h1 class="header center white-text text-darken-4 flow-text transparency">
+                <!--                We Buy Scrap Cars in South Yorkshire<br>-->
+                Call us now on 01234 123 123, or</h1>
             <div class="row center">
                 <a href="#contact-us" id="download-button"
                    class="btn-large waves-effect waves-light blue lighten-1">Get a quote Online NOW.</a>
             </div>
             <br id="we-buy-cars"><br>
-
         </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
 </div>
-
-
 <div class="container">
     <div class="section">
-
         <!--   Icon Section   -->
         <div class="row">
+            <h2 class="center">We Buy Scrap Cars</h2>
             <div class="col s12 m3">
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">£</i></h2>
@@ -114,7 +112,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h3 class="header col s12 white-text">No Tax, No MOT, No Problem!</h3>
+                <h3 class="header col s12 white-text transparency">No Tax, No MOT, No Problem!</h3>
             </div>
         </div>
     </div>
@@ -154,10 +152,10 @@
                     no hidden fees when you scrap a car with us. We are fully insured and pay cash for scrap cars in
                     Sheffield and throughout South Yorkshire.
                 </p>
+                <a id="contact-us"></a>
                 <p class="left-align light">
                     If you have any questions about our vehicle recycling or about anything you are not sure of we would
                     be happy to talk to you, call us on 01234 123 123.</p>
-                <a id="contact-us"></a>
             </div>
         </div>
         <hr>
@@ -258,6 +256,33 @@
                                 <label for="model">Model</label>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="reg" type="text" class="validate">
+                                <label for="reg">Registration Number</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select class="validate" name="car-make">
+                                    <option value="" disabled selected>Choose the make.</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <label for="model">Model</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <select class="validate" name="runner">
+                                    <option value="" disabled selected>Choose the make.</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                                <label for="runner">Runner</label>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -271,7 +296,7 @@
     <div class="section no-pad-bot">
         <div class="container">
             <div class="row center">
-                <h3 class="header col s12 light blue-grey">We will <br> call you back!</h3>
+                <h3 class="header col s12 light transparency">We will <br> call you back!</h3>
             </div>
         </div>
     </div>
@@ -289,15 +314,15 @@
 
 
             </div>
-<!--            <div class="col l3 s12">-->
-<!--                <h5 class="white-text">Settings</h5>-->
-<!--                <ul>-->
-<!--                    <li><a class="white-text" href="#!">Link 1</a></li>-->
-<!--                    <li><a class="white-text" href="#!">Link 2</a></li>-->
-<!--                    <li><a class="white-text" href="#!">Link 3</a></li>-->
-<!--                    <li><a class="white-text" href="#!">Link 4</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
+            <!--            <div class="col l3 s12">-->
+            <!--                <h5 class="white-text">Settings</h5>-->
+            <!--                <ul>-->
+            <!--                    <li><a class="white-text" href="#!">Link 1</a></li>-->
+            <!--                    <li><a class="white-text" href="#!">Link 2</a></li>-->
+            <!--                    <li><a class="white-text" href="#!">Link 3</a></li>-->
+            <!--                    <li><a class="white-text" href="#!">Link 4</a></li>-->
+            <!--                </ul>-->
+            <!--            </div>-->
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
@@ -309,9 +334,9 @@
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright grey darken-3">
         <div class="container">
-            Made by <a class="brown-text text-lighten-3">Yorks-Design</a>
+            Made by <a class="grey-text">Yorks-Design</a>
         </div>
     </div>
 </footer>
