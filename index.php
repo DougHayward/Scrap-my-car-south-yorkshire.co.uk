@@ -5,10 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Scrap My Car - South Yorkshire</title>
-
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+<!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -23,7 +23,6 @@
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#contact-us">Get a Quote</a></li>
             </ul>
-
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="#we-buy-cars">We Buy Cars</a></li>
                 <li><a href="#about-us">About Us</a></li>
@@ -34,18 +33,18 @@
         </div>
     </nav>
 </div>
+<a id="we-buy-cars"></a>
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
         <div class="container">
-            <br><br>
+            <br><br><br>
             <h1 class="header center white-text text-darken-4 flow-text transparency">
                 <!--                We Buy Scrap Cars in South Yorkshire<br>-->
-                Call us now on 01234 123 123, or</h1>
+                Call us now on <a href="tel:07540298942">07540 298942</a></h1>
             <div class="row center">
                 <a href="#contact-us" id="download-button"
                    class="btn-large waves-effect waves-light blue lighten-1">Get a quote Online NOW.</a>
             </div>
-            <br id="we-buy-cars"><br>
         </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
@@ -86,20 +85,19 @@
                         the required DVLA paperwork. We don't care if your MOT has expired or if you are trying to sell
                         your written off car. You can sell us your car with no tax or mot. Scrap Car Collection Scrap a
                         Car for Cash Scrap Car Services We will satisfy you in all kind of scrap cars collections
-                        services or car breakdown cover..</p>
+                        services or car breakdown cover.</p>
                 </div>
             </div>
             <div class="col s12 m3">
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">mood</i></h2>
                     <h5 class="center">Removal</h5>
-
                     <p class="light">We offer a first class scrap car removal, collection and disposal in South
                         Yorkshire and
                         can offer good prices for your scrap car today. As one of the best known scrap car breakers in
                         South Yorkshire we can dispose of your unwanted scrap car, we offer scrap car collection in
                         South Yorkshire
-                        and the surrounding areas..</p>
+                        and the surrounding areas.</p>
                 </div>
             </div>
         </div>
@@ -155,7 +153,7 @@
                 <a id="contact-us"></a>
                 <p class="left-align light">
                     If you have any questions about our vehicle recycling or about anything you are not sure of we would
-                    be happy to talk to you, call us on 01234 123 123.</p>
+                    be happy to talk to you, call us on <a href="tel:07540 298942">07540 298942</a>.</p>
             </div>
         </div>
         <hr>
@@ -166,38 +164,37 @@
                     team.</p>
                 <div class="row">
                     <form class="col s12">
-                        <legend>About You.</legend>
+                        <h3>About You.</h3>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                <input id="first_name" name="name" type="text" class="validate">
                                 <label for="first_name">Name</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Email</label>
+                                <input id="email" name="email" type="text" class="validate">
+                                <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                <label for="first_name">Address</label>
+                                <input id="address" type="text" class="validate">
+                                <label for="address">Address</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                <label for="first_name">Postcode</label>
+                                <input id="postcode" name="postcode" type="text" class="validate">
+                                <label for="postcode">Postcode</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Phone</label>
+                                <input id="phone" type="text" name="phone" class="validate">
+                                <label for="phone">Phone</label>
                             </div>
                         </div>
-                        <hr>
-                        <legend>A little about the car.</legend>
+                        <h3>A little about the car.</h3>
                         <div class="row">
                             <div class="input-field col s6">
-                                <select class="validate" name="car-make">
+                                <select class="validate" id="car_make" name="car_make">
                                     <option value="" disabled selected>Choose the make.</option>
                                     <option>AC</option>
                                     <option>Alfa Romeo</option>
@@ -249,49 +246,46 @@
                                     <option>Volkswagen</option>
                                     <option>Other</option>
                                 </select>
-                                <label>Car Make</label>
+                                <label for="car_make">Car Make</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="model" type="text" class="validate">
-                                <label for="model">Model</label>
+                                <input id="car_model" type="text" name="car_model" class="validate">
+                                <label for="car_model">Model</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="reg" type="text" class="validate">
-                                <label for="reg">Registration Number</label>
+                                <input id="car_reg" name="car_reg" type="text" class="validate">
+                                <label for="car_reg">Registration Number</label>
                             </div>
                             <div class="input-field col s6">
-                                <select class="validate" name="car-make">
-                                    <option value="" disabled selected>Choose the make.</option>
+                                <select class="validate" id="car_keys" name="car_keys">
+                                    <option value="" disabled selected>How many keys do you have.</option>
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
                                     <option>4</option>
                                     <option>5</option>
                                 </select>
-                                <label for="model">Model</label>
+                                <label for="car_keys">Model</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <select class="validate" name="runner">
-                                    <option value="" disabled selected>Choose the make.</option>
+                                <select class="validate" name="car_runner" id="car_runner">
+                                    <option value="" disabled selected>Is it a runner?</option>
                                     <option>Yes</option>
                                     <option>No</option>
                                 </select>
-                                <label for="runner">Runner</label>
+                                <label for="car_runner">Runner</label>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
-
-
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
         <div class="container">
@@ -302,17 +296,12 @@
     </div>
     <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
-
 <footer class="page-footer blue">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">Scrap my car - South Yorkshire</h5>
-                <p class="grey-text text-lighten-4">
-
-                </p>
-
-
+                <p class="grey-text text-lighten-4"></p>
             </div>
             <!--            <div class="col l3 s12">-->
             <!--                <h5 class="white-text">Settings</h5>-->
@@ -326,17 +315,17 @@
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><a class="white-text" href="#!">Link 1</a></li>
-                    <li><a class="white-text" href="#!">Link 2</a></li>
-                    <li><a class="white-text" href="#!">Link 3</a></li>
-                    <li><a class="white-text" href="#!">Link 4</a></li>
+                    <li><a class="white-text" href="">Link 1</a></li>
+                    <li><a class="white-text" href="#">Link 2</a></li>
+                    <li><a class="white-text" href="#">Link 3</a></li>
+                    <li><a class="white-text" href="#">Link 4</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright grey darken-3">
         <div class="container">
-            Made by <a class="grey-text">Yorks-Design</a>
+            Made by <a class="grey-text">TD-Design</a>
         </div>
     </div>
 </footer>
@@ -344,7 +333,7 @@
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 <script src="js/init.js"></script>
 <script src="js/smooth-scroll.js"></script>
 

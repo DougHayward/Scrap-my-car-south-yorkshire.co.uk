@@ -60,7 +60,8 @@ footer.page-footer {
 }
 
 .brand-logo {
-    line-height: 1.2;
+    line-height: 0.8;
+    padding-top:10px !important;
     text-align: center;
     font-size: 1.7rem !important;
 }
