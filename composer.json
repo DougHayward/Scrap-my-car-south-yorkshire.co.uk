@@ -2,8 +2,13 @@
     "name": "doug/doug",
     "license": "proprietary",
     "type": "project",
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
+    },
     "require": {
-        "php": "~7.0",
+        "php": "~5.6",
         "sendgrid/sendgrid": "~5.5"
     }
 }
