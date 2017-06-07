@@ -8,7 +8,7 @@
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-<!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+    <!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -23,16 +23,16 @@
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#contact-us">Get a Quote</a></li>
             </ul>
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#we-buy-cars">We Buy Cars</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact-us">Get a Quote</a></li>
-            </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse white-text
 "><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </div>
+<ul id="nav-mobile" class="side-nav">
+    <li><a href="#we-buy-cars">We Buy Cars</a></li>
+    <li><a href="#about-us">About Us</a></li>
+    <li><a href="#contact-us">Get a Quote</a></li>
+</ul>
 <a id="we-buy-cars"></a>
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
