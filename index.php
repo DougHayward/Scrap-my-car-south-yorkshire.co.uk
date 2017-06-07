@@ -6,19 +6,17 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 // If you are not using Composer
 // require("path/to/sendgrid-php/sendgrid-php.php");
-$from = new SendGrid\Email("Example User", "doug@bonniechef.com");
-$subject = "Sending with SendGrid is Fun";
-$to = new SendGrid\Email("Example User", "doug@bonniechef.com");
-$content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
-$mail = new SendGrid\Mail($from, $subject, $to, $content);
-$apiKey = getenv('SENDGRID_API_KEY');
-$sg = new \SendGrid("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");
-$response = $sg->client->mail()->send()->post($mail);
-echo $response->statusCode();
-print_r($response->headers());
-echo $response->body();
+if (isset($_POST['send_email'])) {
 
-
+    $from = new SendGrid\Email("Example User", "doug@bonniechef.com");
+    $subject = "Sending with SendGrid is Fun";
+    $to = new SendGrid\Email("Example User", "doug@bonniechef.com");
+    $content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
+    $mail = new SendGrid\Mail($from, $subject, $to, $content);
+    $apiKey = getenv('SENDGRID_API_KEY');
+    $sg = new \SendGrid("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");
+    $response = $sg->client->mail()->send()->post($mail);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -184,7 +182,7 @@ echo $response->body();
                 <p>Fill the form out below in order to get a free no obligation quote from a member of our specialist
                     team.</p>
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" method="POST">
                         <h3>About You.</h3>
                         <div class="row">
                             <div class="input-field col s6">
@@ -300,6 +298,11 @@ echo $response->body();
                                 </select>
                                 <label for="car_runner">Runner</label>
                             </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn-large waves-effect waves-light blue lighten-1"><i
+                                        class="material-icons left">send</i>Request Quote Now
+                            </button>
                         </div>
                     </form>
                 </div>
