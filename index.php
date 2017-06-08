@@ -14,7 +14,7 @@ if (isset($_POST['send_email'])) {
     $content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
     $apiKey = getenv('SENDGRID_API_KEY');
-    $sg = new \SendGrid("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");
+    $sg = new \SendGrid($apiKey);
     $response = $sg->client->mail()->send()->post($mail);
 }
 ?>
