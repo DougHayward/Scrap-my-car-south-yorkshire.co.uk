@@ -1,21 +1,14 @@
 <?php
+use Application\EmailController;
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 require 'vendor/autoload.php';
-// If you are not using Composer
-// require("path/to/sendgrid-php/sendgrid-php.php");
-if (isset($_POST['send_email'])) {
 
-    $from = new SendGrid\Email("Example User", "doug@bonniechef.com");
-    $subject = "Sending with SendGrid is Fun";
-    $to = new SendGrid\Email("Example User", "doug@bonniechef.com");
-    $content = new SendGrid\Content("text/plain", "and easy to do anywhere, even with PHP");
-    $mail = new SendGrid\Mail($from, $subject, $to, $content);
-    $apiKey = getenv('SENDGRID_API_KEY');
-    $sg = new \SendGrid($apiKey);
-    $response = $sg->client->mail()->send()->post($mail);
+if (isset($_POST['send_email'])) {
+    (new EmailController())->processForm();
 }
 ?>
 <!DOCTYPE html>
@@ -28,7 +21,7 @@ if (isset($_POST['send_email'])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="./css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -66,7 +59,7 @@ if (isset($_POST['send_email'])) {
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="./images/background1.jpg" alt="Unsplashed background img 1"></div>
 </div>
 <div class="container">
     <div class="section">
@@ -133,7 +126,7 @@ if (isset($_POST['send_email'])) {
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="./images/background2.jpg" alt="Unsplashed background img 2"></div>
 </div>
 
 <div class="container">
@@ -196,7 +189,7 @@ if (isset($_POST['send_email'])) {
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="address" type="text" class="validate">
+                                <input id="address" name="address" type="text" class="validate">
                                 <label for="address">Address</label>
                             </div>
                         </div>
@@ -214,56 +207,46 @@ if (isset($_POST['send_email'])) {
                         <div class="row">
                             <div class="input-field col s6">
                                 <select class="validate" id="car_make" name="car_make">
-                                    <option value="" disabled selected>Choose the make.</option>
-                                    <option>AC</option>
-                                    <option>Alfa Romeo</option>
-                                    <option>Aston Martin</option>
-                                    <option>Audi</option>
-                                    <option>Bentley</option>
-                                    <option>BMW</option>
-                                    <option>Caterham</option>
-                                    <option>Chrysler Jeep</option>
-                                    <option>Citroen</option>
-                                    <option>Daewoo</option>
-                                    <option>Daihatsu</option>
-                                    <option>Ferrari</option>
-                                    <option>Fiat</option>
-                                    <option>Ford</option>
-                                    <option>Honda</option>
-                                    <option>Hyundai</option>
-                                    <option>Isuzu</option>
-                                    <option>Jaguar</option>
-                                    <option>Jeep</option>
-                                    <option>Kia</option>
-                                    <option>Lamborghini</option>
-                                    <option>Land Rover</option>
-                                    <option>Lexus</option>
-                                    <option>Maserati</option>
-                                    <option>Mazda</option>
-                                    <option>Mercedes-Benz</option>
-                                    <option>MG</option>
-                                    <option>Mitsubishi</option>
-                                    <option>Morgan</option>
-                                    <option>Nissan</option>
-                                    <option>Perodua</option>
-                                    <option>Peugeot</option>
-                                    <option>Porsche</option>
-                                    <option>Proton</option>
-                                    <option>Renault</option>
-                                    <option>Rolls-Royce</option>
-                                    <option>Rover</option>
-                                    <option>Saab</option>
-                                    <option>SEAT</option>
-                                    <option>Skoda</option>
-                                    <option>smart</option>
-                                    <option>Subaru</option>
-                                    <option>Suzuki</option>
-                                    <option>Toyota</option>
-                                    <option>TVR</option>
-                                    <option>Vauxhall</option>
-                                    <option>Volvo</option>
-                                    <option>Volkswagen</option>
-                                    <option>Other</option>
+                                    <option disabled selected>Choose the make.</option>
+                                    <option value="AC">AC</option>
+                                    <option value="Alfa Romeo">Alfa Romeo</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="Chrysler Jeep">Chrysler Jeep</option>
+                                    <option value="Citroen">Citroen</option>
+                                    <option value="Daewoo">Daewoo</option>
+                                    <option value="Daihatsu">Daihatsu</option>
+                                    <option value="Fiat">Fiat</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Honda">Honda</option>
+                                    <option value="Hyundai">Hyundai</option>
+                                    <option value="Isuzu">Isuzu</option>
+                                    <option value="Jaguar">Jaguar</option>
+                                    <option value="Jeep">Jeep</option>
+                                    <option value="Kia">Kia</option>
+                                    <option value="Land Rover">Land Rover</option>
+                                    <option value="Lexus">Lexus</option>
+                                    <option value="Mazda">Mazda</option>
+                                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                    <option value="MG">MG</option>
+                                    <option value="Mitsubishi">Mitsubishi</option>
+                                    <option value="Nissan">Nissan</option>
+                                    <option value="Perodua">Perodua</option>
+                                    <option value="Peugeot">Peugeot</option>
+                                    <option value="Proton">Proton</option>
+                                    <option value="Renault">Renault</option>
+                                    <option value="Rover">Rover</option>
+                                    <option value="Saab">Saab</option>
+                                    <option value="SEAT">SEAT</option>
+                                    <option value="Skoda">Skoda</option>
+                                    <option value="smart">smart</option>
+                                    <option value="Subaru">Subaru</option>
+                                    <option value="Suzuki">Suzuki</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Vauxhall">Vauxhall</option>
+                                    <option value="Volvo">Volvo</option>
+                                    <option value="Volkswagen">Volkswagen</option>
+                                    <option value="Other - State in Model">Other</option>
                                 </select>
                                 <label for="car_make">Car Make</label>
                             </div>
@@ -274,27 +257,27 @@ if (isset($_POST['send_email'])) {
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="car_reg" name="car_reg" type="text" class="validate">
-                                <label for="car_reg">Registration Number</label>
+                                <input id="car_registration" name="car_registration" type="text" class="validate">
+                                <label for="car_registration">Registration Number</label>
                             </div>
                             <div class="input-field col s6">
                                 <select class="validate" id="car_keys" name="car_keys">
                                     <option value="" disabled selected>How many keys do you have.</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
-                                <label for="car_keys">Model</label>
+                                <label for="car_keys">How many keys?</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
                                 <select class="validate" name="car_runner" id="car_runner">
-                                    <option value="" disabled selected>Is it a runner?</option>
-                                    <option>Yes</option>
-                                    <option>No</option>
+                                    <option disabled selected>Is it a runner?</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
                                 </select>
                                 <label for="car_runner">Runner</label>
                             </div>
@@ -318,7 +301,7 @@ if (isset($_POST['send_email'])) {
             </div>
         </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="./images/background3.jpg" alt="Unsplashed background img 3"></div>
 </div>
 <footer class="page-footer blue">
     <div class="container">
@@ -358,8 +341,8 @@ if (isset($_POST['send_email'])) {
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-<script src="js/init.js"></script>
-<script src="js/smooth-scroll.js"></script>
+<script src="js/init.min.js"></script>
+<script src="js/smooth-scroll.min.js"></script>
 
 </body>
 </html>
