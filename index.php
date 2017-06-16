@@ -323,8 +323,10 @@ if (isset($_POST['send_email'])) {
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><a class="white-text" href="https://www.instagram.com/scrapmycarsy/">@scrapmycarsy</a></li>
-                    <li><a class="white-text" href="https://twitter.com/scrapmycarsy/">@scrapmycarsy</a></li>
+                    <li><a class="white-text" href="https://www.instagram.com/scrapmycarsy/"><i
+                                    class="ion-social-instagram medium"></i>@scrapmycarsy</a></li>
+                    <li><a class="white-text" href="https://twitter.com/scrapmycarsy/"><i
+                                    class="ion-social-twitter medium"></i>@scrapmycarsy</a></li>
                 </ul>
             </div>
         </div>
