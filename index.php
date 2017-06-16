@@ -18,11 +18,13 @@ if (isset($_POST['send_email'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Scrap My Car - South Yorkshire</title>
     <!-- CSS  -->
-<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
+    <!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
     <!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-<!--    <link href="./css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
+
     <?php include "Application/css.php"; //Cheats google page speed for 100/100 ?>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -324,10 +326,10 @@ if (isset($_POST['send_email'])) {
                 <h5 class="white-text">Connect</h5>
                 <ul>
                     <li><a class="white-text" href="https://www.instagram.com/scrapmycarsy/"><i
-                                    class="ion-social-instagram medium"></i>@scrapmycarsy</a></li>
+                                    class="ion-social-instagram small"></i> @scrapmycarsy</a></li>
                     <li><a class="white-text" href="https://twitter.com/scrapmycarsy/"><i
-                                    class="ion-social-twitter medium"></i>@scrapmycarsy</a></li>
-                </ul>
+                                    class="ion-social-twitter small"></i>@scrapmycarsy</a></li>
+                </ul> 
             </div>
         </div>
     </div>
