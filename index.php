@@ -1,14 +1,16 @@
 <?php
-use Application\EmailController;
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+use Application\EmailController;
 
 require 'vendor/autoload.php';
 
 if (isset($_POST['send_email'])) {
-    (new EmailController())->processForm();
+    $email = new EmailController();
+    $email->processForm();
+    print "HERE";
+    die();
 }
 ?>
 <!DOCTYPE html>
@@ -329,7 +331,7 @@ if (isset($_POST['send_email'])) {
                                     class="ion-social-instagram small"></i> @scrapmycarsy</a></li>
                     <li><a class="white-text" href="https://twitter.com/scrapmycarsy/"><i
                                     class="ion-social-twitter small"></i>@scrapmycarsy</a></li>
-                </ul> 
+                </ul>
             </div>
         </div>
     </div>
