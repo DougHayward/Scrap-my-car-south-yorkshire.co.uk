@@ -33,7 +33,7 @@ class EmailController
         $to = new Email("Jason", "doug@bonniechef.com");
         $content = new Content("text/plain", "and easy to do anywhere, even with PHP");
         $subs = new SendGrid\Personalization();
-
+        $subs->addTo($to);
         $subs->addSubstitution("%name%",$person->getName());
         $mail = new Mail($from, $subject, $to, $content);
         $mail->addPersonalization($subs);
