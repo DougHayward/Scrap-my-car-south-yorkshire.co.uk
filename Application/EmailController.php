@@ -46,7 +46,6 @@ class EmailController
         $to = new Email($person->getName(), $person->getEmail());
         $content = new Content("text/plain", "and easy to do anywhere, even with PHP");
         $mail = new Mail($from, $subject, $to, $content);
-        $mail->
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
         $response = $sg->client->mail()->send()->post($mail);
