@@ -288,7 +288,7 @@ if (isset($_POST['send_email'])) {
                             </div>
                         </div>
                         <div class="row">
-                            <button type="submit" class="btn-large waves-effect waves-light blue lighten-1"><i
+                            <button type="submit" name="send_email" class="btn-large waves-effect waves-light blue lighten-1"><i
                                         class="material-icons left">send</i>Request Quote Now
                             </button>
                         </div>

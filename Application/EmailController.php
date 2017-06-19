@@ -7,7 +7,9 @@
 namespace Application;
 
 use Application\Model\{Car, Person};
-use SendGrid\{Email, Content, Mail};
+use SendGrid\Email;
+use SendGrid\Content;
+use SendGrid\Mail;
 
 class EmailController
 {
