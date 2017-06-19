@@ -34,7 +34,10 @@ class EmailController
         $mail = new Mail($from, $subject, $to, $content);
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
-        $sg->client->mail()->send()->post($mail);
+       $response = $sg->client->mail()->send()->post($mail);
+        print "<PRE>";
+        print_R($response);
+        print "</PRE>";
         PRINT "GOT 2";
     }
 
@@ -49,6 +52,10 @@ class EmailController
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
         $response = $sg->client->mail()->send()->post($mail);
+
+        print "<PRE>";
+        print_R($response);
+        print "</PRE>";
         PRINT "GOT 4";
     }
 
