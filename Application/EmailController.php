@@ -7,6 +7,7 @@
 namespace Application;
 
 use Application\Model\{Car, Person};
+use SendGrid;
 use SendGrid\Email;
 use SendGrid\Content;
 use SendGrid\Mail;
@@ -31,7 +32,12 @@ class EmailController
         $subject = "Quote Requested on Scrap-my-car-south-yorkshire.co.uk";
         $to = new Email("Jason", "doug@bonniechef.com");
         $content = new Content("text/plain", "and easy to do anywhere, even with PHP");
+        $subs = new SendGrid\Personalization();
+
+        $subs->addSubstitution("%name%",$person->getName());
         $mail = new Mail($from, $subject, $to, $content);
+        $mail->addPersonalization($subs);
+        $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
        $response = $sg->client->mail()->send()->post($mail);
@@ -50,7 +56,7 @@ class EmailController
         $content = new Content("text/plain", "and easy to do anywhere, even with PHP");
         $mail = new Mail($from, $subject, $to, $content);
         $apiKey = getenv('SENDGRID_API_KEY');
-        $sg = new \SendGrid($apiKey);
+        $sg = new SendGrid($apiKey);
         $response = $sg->client->mail()->send()->post($mail);
 
         print "<PRE>";
