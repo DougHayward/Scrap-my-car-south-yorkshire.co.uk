@@ -18,7 +18,7 @@ if (isset($_POST['send_email'])) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Scrap My Car - South Yorkshire</title>
+    <title>Remove My Car - South Yorkshire</title>
     <!-- CSS  -->
     <!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
@@ -32,7 +32,7 @@ if (isset($_POST['send_email'])) {
 <div class="navbar-fixed">
     <nav class="blue accent-2" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo white-text">Scrap my Car<br>
+            <a id="logo-container" href="#" class="brand-logo white-text">Remove my Car<br>
                 <small>South Yorkshire</small>
             </a>
             <ul class="right hide-on-med-and-down">
@@ -141,7 +141,7 @@ if (isset($_POST['send_email'])) {
             <div class="col s12 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
                 <h4>About Us</h4>
-                <p class="left-align light">Scrap My Car Sheffield are one of the biggest scrap car buyers in Sheffield
+                <p class="left-align light">Remove My Car Sheffield are one of the biggest scrap car buyers in Sheffield
                     and we make every effort to ensure your vehicle is recycled in an environmentally friendly way.
                 </p>
                 <p class="left-align light">
@@ -312,7 +312,7 @@ if (isset($_POST['send_email'])) {
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">Scrap My Car - South Yorkshire</h5>
+                <h5 class="white-text">Remove My Car - South Yorkshire</h5>
                 <p class="grey-text text-lighten-4"></p>
             </div>
             <!--            <div class="col l3 s12">-->
@@ -327,10 +327,10 @@ if (isset($_POST['send_email'])) {
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
-                    <li><a class="white-text" href="https://www.instagram.com/scrapmycarsy/"><i
-                                    class="ion-social-instagram small"></i> @scrapmycarsy</a></li>
-                    <li><a class="white-text" href="https://twitter.com/scrapmycarsy/"><i
-                                    class="ion-social-twitter small"></i>@scrapmycarsy</a></li>
+                    <li><a class="white-text" href="https://www.instagram.com/Removemycarsy/"><i
+                                    class="ion-social-instagram small"></i> @Removemycarsy</a></li>
+                    <li><a class="white-text" href="https://twitter.com/Removemycarsy/"><i
+                                    class="ion-social-twitter small"></i>@Removemycarsy</a></li>
                 </ul>
             </div>
         </div>
