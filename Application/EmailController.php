@@ -31,18 +31,18 @@ class EmailController
         $content = new Content("text/html", "An email from RemoveMyCarSouthYorkshire.co.uk");
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
-        $subs
-            ->addSubstitution("%name%",$person->getName())
-            ->addSubstitution("%email%",$person->getEmail())
-            ->addSubstitution("%phone%",$person->getPhone())
-            ->addSubstitution("%address%",$person->getAddress())
-            ->addSubstitution("%postcode%",$person->getPostcode())
-            ->addSubstitution("%make%",$car->getMake())
-            ->addSubstitution("%model%",$car->getModel())
-            ->addSubstitution("%runner%",$car->getRunner())
-            ->addSubstitution("%keys%",$car->getKeys())
-            ->addSubstitution("%registration%",$car->getRegistration())
-        ;
+
+        $subs->addSubstitution("%name%",$person->getName());
+        $subs->addSubstitution("%email%",$person->getEmail());
+        $subs->addSubstitution("%phone%",$person->getPhone());
+        $subs->addSubstitution("%address%",$person->getAddress());
+        $subs->addSubstitution("%postcode%",$person->getPostcode());
+        $subs->addSubstitution("%make%",$car->getMake());
+        $subs->addSubstitution("%model%",$car->getModel());
+        $subs->addSubstitution("%runner%",$car->getRunner());
+        $subs->addSubstitution("%keys%",$car->getKeys());
+        $subs->addSubstitution("%registration%",$car->getRegistration());
+
         $mail = new Mail($from, $subject, $to, $content);
         $mail->addPersonalization($subs);
         $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
@@ -60,18 +60,16 @@ class EmailController
         $content = new Content("text/html", "An email from RemoveMyCarSouthYorkshire.co.uk");
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
-        $subs
-            ->addSubstitution("%name%",$person->getName())
-            ->addSubstitution("%email%",$person->getEmail())
-            ->addSubstitution("%phone%",$person->getPhone())
-            ->addSubstitution("%address%",$person->getAddress())
-            ->addSubstitution("%postcode%",$person->getPostcode())
-            ->addSubstitution("%make%",$car->getMake())
-            ->addSubstitution("%model%",$car->getModel())
-            ->addSubstitution("%runner%",$car->getRunner())
-            ->addSubstitution("%keys%",$car->getKeys())
-            ->addSubstitution("%registration%",$car->getRegistration())
-        ;
+        $subs->addSubstitution("%name%",$person->getName());
+        $subs->addSubstitution("%email%",$person->getEmail());
+        $subs->addSubstitution("%phone%",$person->getPhone());
+        $subs->addSubstitution("%address%",$person->getAddress());
+        $subs->addSubstitution("%postcode%",$person->getPostcode());
+        $subs->addSubstitution("%make%",$car->getMake());
+        $subs->addSubstitution("%model%",$car->getModel());
+        $subs->addSubstitution("%runner%",$car->getRunner());
+        $subs->addSubstitution("%keys%",$car->getKeys());
+        $subs->addSubstitution("%registration%",$car->getRegistration());
         $mail = new Mail($from, $subject, $to, $content);
         $mail->addPersonalization($subs);
         $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
