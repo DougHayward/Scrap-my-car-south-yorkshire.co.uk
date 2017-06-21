@@ -6,7 +6,9 @@
  */
 namespace Application;
 
-use Application\Model\{Car, Person};
+use Application\Model\{
+    Car, Person
+};
 use SendGrid;
 use SendGrid\Email;
 use SendGrid\Content;
@@ -16,7 +18,8 @@ class EmailController
 {
 
 
-    public function processForm(){
+    public function processForm()
+    {
         $car = new Car($_POST);
         $person = new Person($_POST);
         $this->sendRequestEmail($car, $person);
@@ -30,16 +33,16 @@ class EmailController
         $to = new Email("Jason", "doug@bonniechef.com");
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
-        $subs->addSubstitution("%name%",$person->getName());
-        $subs->addSubstitution("%email%",$person->getEmail());
-        $subs->addSubstitution("%phone%",$person->getPhone());
-        $subs->addSubstitution("%address%",$person->getAddress());
-        $subs->addSubstitution("%postcode%",$person->getPostcode());
-        $subs->addSubstitution("%make%",$car->getMake());
-        $subs->addSubstitution("%model%",$car->getModel());
-        $subs->addSubstitution("%runner%",$car->getRunner());
-        $subs->addSubstitution("%keys%",$car->getKeys());
-        $subs->addSubstitution("%registration%",$car->getRegistration());
+        $subs->addSubstitution("%name%", $person->getName());
+        $subs->addSubstitution("%email%", $person->getEmail());
+        $subs->addSubstitution("%phone%", $person->getPhone());
+        $subs->addSubstitution("%address%", $person->getAddress());
+        $subs->addSubstitution("%postcode%", $person->getPostcode());
+        $subs->addSubstitution("%make%", $car->getMake());
+        $subs->addSubstitution("%model%", $car->getModel());
+        $subs->addSubstitution("%runner%", $car->getRunner());
+        $subs->addSubstitution("%keys%", $car->getKeys());
+        $subs->addSubstitution("%registration%", $car->getRegistration());
         $mail = new Mail();
         $mail->addPersonalization($subs);
         $mail->setFrom($from);
@@ -64,16 +67,16 @@ class EmailController
 
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
-        $subs->addSubstitution("%name%",$person->getName());
-        $subs->addSubstitution("%email%",$person->getEmail());
-        $subs->addSubstitution("%phone%",$person->getPhone());
-        $subs->addSubstitution("%address%",$person->getAddress());
-        $subs->addSubstitution("%postcode%",$person->getPostcode());
-        $subs->addSubstitution("%make%",$car->getMake());
-        $subs->addSubstitution("%model%",$car->getModel());
-        $subs->addSubstitution("%runner%",$car->getRunner());
-        $subs->addSubstitution("%keys%",$car->getKeys());
-        $subs->addSubstitution("%registration%",$car->getRegistration());
+        $subs->addSubstitution("%name%", $person->getName());
+        $subs->addSubstitution("%email%", $person->getEmail());
+        $subs->addSubstitution("%phone%", $person->getPhone());
+        $subs->addSubstitution("%address%", $person->getAddress());
+        $subs->addSubstitution("%postcode%", $person->getPostcode());
+        $subs->addSubstitution("%make%", $car->getMake());
+        $subs->addSubstitution("%model%", $car->getModel());
+        $subs->addSubstitution("%runner%", $car->getRunner());
+        $subs->addSubstitution("%keys%", $car->getKeys());
+        $subs->addSubstitution("%registration%", $car->getRegistration());
         $mail = new Mail();
         $mail->addPersonalization($subs);
         $mail->setFrom($from);
@@ -83,7 +86,7 @@ class EmailController
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
         $response = $sg->client->mail()->send()->post($mail);
-    print_r($mail);
+        print_r($mail);
 
         print_R($response);
         print "</PRE>";

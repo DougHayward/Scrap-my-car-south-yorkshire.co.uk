@@ -182,11 +182,11 @@ if (isset($_POST['send_email'])) {
                         <h3>About You.</h3>
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="first_name" name="name" type="text" class="validate">
+                                <input id="first_name" name="name" type="text" required class="validate">
                                 <label for="first_name">Name</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="email" name="email" type="text" class="validate">
+                                <input id="email" name="email" type="text" required class="validate">
                                 <label for="email">Email</label>
                             </div>
                         </div>
@@ -209,7 +209,7 @@ if (isset($_POST['send_email'])) {
                         <h3>A little about the car.</h3>
                         <div class="row">
                             <div class="input-field col s6">
-                                <select class="validate" id="car_make" name="car_make">
+                                <select class="validate" id="car_make" required  name="car_make">
                                     <option disabled selected>Choose the make.</option>
                                     <option value="AC">AC</option>
                                     <option value="Alfa Romeo">Alfa Romeo</option>
@@ -254,7 +254,7 @@ if (isset($_POST['send_email'])) {
                                 <label for="car_make">Car Make</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="car_model" type="text" name="car_model" class="validate">
+                                <input id="car_model" type="text" name="car_model" required class="validate">
                                 <label for="car_model">Model</label>
                             </div>
                         </div>
@@ -277,7 +277,7 @@ if (isset($_POST['send_email'])) {
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <select class="validate" name="car_runner" id="car_runner">
+                                <select class="validate" name="car_runner"  required id="car_runner">
                                     <option disabled selected>Is it a runner?</option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>

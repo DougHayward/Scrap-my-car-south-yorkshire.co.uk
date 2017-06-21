@@ -24,11 +24,11 @@ class Person
     function __construct($post)
     {
        $this
-           ->setName($_POST['name']??null)
-           ->setEmail($_POST['email']??null)
-           ->setAddress($_POST['address']??null)
-           ->setPostcode($_POST['postcode']??null)
-           ->setPhone($_POST['phone']??null)
+           ->setName($_POST['name']??"Not set")
+           ->setEmail($_POST['email']??"Not set")
+           ->setAddress($_POST['address']??"Not set")
+           ->setPostcode($_POST['postcode']??"Not set")
+           ->setPhone($_POST['phone']??"Not set")
        ;
     }
 

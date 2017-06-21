@@ -16,7 +16,7 @@ class Car
     private $model;
     /* @var $registration string */
     private $registration;
-    /* @var $keys integer */
+    /* @var $keys string */
     private $keys;
     /* @var $runner string */
     private $runner;
@@ -24,11 +24,11 @@ class Car
     function __construct()
     {
         $this
-            ->setMake($_POST['car_make']??null)
-            ->setModel($_POST['car_model']??null)
-            ->setRegistration($_POST['car_registration']??null)
-            ->setKeys($_POST['car_keys']??null)
-            ->setRunner($_POST['car_runner']??null)
+            ->setMake($_POST['car_make']??"Not set")
+            ->setModel($_POST['car_model']??"Not set")
+            ->setRegistration($_POST['car_registration']??"Not set")
+            ->setKeys($_POST['car_keys']??"Not set")
+            ->setRunner($_POST['car_runner']??"Not set")
         ;
     }
 
@@ -87,18 +87,18 @@ class Car
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getKeys(): int
+    public function getKeys(): string
     {
         return $this->keys;
     }
 
     /**
-     * @param int $keys
+     * @param string $keys
      * @return Car
      */
-    public function setKeys(int $keys): Car
+    public function setKeys(string $keys): Car
     {
         $this->keys = $keys;
         return $this;
