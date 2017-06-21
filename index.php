@@ -9,8 +9,6 @@ require 'vendor/autoload.php';
 if (isset($_POST['send_email'])) {
     $email = new EmailController();
     $email->processForm();
-    print "HERE";
-    die();
 }
 ?>
 <!DOCTYPE html>
