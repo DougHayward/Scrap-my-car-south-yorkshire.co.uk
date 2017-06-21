@@ -28,10 +28,8 @@ class EmailController
         $from = new Email($person->getName(), $person->getEmail());
         $subject = "Quote Requested on RemoveMyCarSouthYorkshire.co.uk";
         $to = new Email("Jason", "doug@bonniechef.com");
-        $content = new Content("text/html", "An email from RemoveMyCarSouthYorkshire.co.uk");
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
-
         $subs->addSubstitution("%name%",$person->getName());
         $subs->addSubstitution("%email%",$person->getEmail());
         $subs->addSubstitution("%phone%",$person->getPhone());
@@ -42,9 +40,9 @@ class EmailController
         $subs->addSubstitution("%runner%",$car->getRunner());
         $subs->addSubstitution("%keys%",$car->getKeys());
         $subs->addSubstitution("%registration%",$car->getRegistration());
-
-        $mail = new Mail($from, $subject, $to, $content);
         $mail->addPersonalization($subs);
+        $mail->setFrom($from);
+        $mail->setSubject($subject);
         $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
@@ -59,7 +57,7 @@ class EmailController
         $from = new Email("Jason", "info@removemyCarSouthYorkshire.co.uk");
         $subject = "Confirmation of Quote Requested on RemoveMyCarSouthYorkshire.co.uk";
         $to = new Email($person->getName(), $person->getEmail());
-        $content = new Content("text/html", "An email from RemoveMyCarSouthYorkshire.co.uk");
+
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
         $subs->addSubstitution("%name%",$person->getName());
@@ -72,8 +70,10 @@ class EmailController
         $subs->addSubstitution("%runner%",$car->getRunner());
         $subs->addSubstitution("%keys%",$car->getKeys());
         $subs->addSubstitution("%registration%",$car->getRegistration());
-        $mail = new Mail($from, $subject, $to, $content);
         $mail->addPersonalization($subs);
+        $mail->setFrom($from);
+        $mail->setSubject($subject);
+
         $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
