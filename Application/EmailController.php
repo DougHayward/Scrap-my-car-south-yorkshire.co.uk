@@ -30,7 +30,7 @@ class EmailController
     {
         $from = new Email($person->getName(), $person->getEmail());
         $subject = "Quote Requested on RemoveMyCarSouthYorkshire.co.uk";
-        $to = new Email("Jason", "doug@bonniechef.com");
+        $to = new Email("Jason", "fiddler_jason@yahoo.co.uk");
         $subs = new SendGrid\Personalization();
         $subs->addTo($to);
         $subs->addSubstitution("%name%", $person->getName());
