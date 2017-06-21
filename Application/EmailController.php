@@ -48,7 +48,9 @@ class EmailController
         $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
-        $sg->client->mail()->send()->post($mail);
+        $response = $sg->client->mail()->send()->post($mail);
+
+        print_R($response);
 
     }
 
@@ -75,7 +77,9 @@ class EmailController
         $mail->setTemplateId("2ab72d9e-217e-40e6-a5dc-67e162a13dc4");
         $apiKey = getenv('SENDGRID_API_KEY');
         $sg = new \SendGrid($apiKey);
-        $sg->client->mail()->send()->post($mail);
+        $response = $sg->client->mail()->send()->post($mail);
+
+        print_R($response);
     }
 
 }
