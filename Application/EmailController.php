@@ -40,6 +40,7 @@ class EmailController
         $subs->addSubstitution("%runner%",$car->getRunner());
         $subs->addSubstitution("%keys%",$car->getKeys());
         $subs->addSubstitution("%registration%",$car->getRegistration());
+        $mail = new Mail();
         $mail->addPersonalization($subs);
         $mail->setFrom($from);
         $mail->setSubject($subject);
@@ -70,6 +71,7 @@ class EmailController
         $subs->addSubstitution("%runner%",$car->getRunner());
         $subs->addSubstitution("%keys%",$car->getKeys());
         $subs->addSubstitution("%registration%",$car->getRegistration());
+        $mail = new Mail();
         $mail->addPersonalization($subs);
         $mail->setFrom($from);
         $mail->setSubject($subject);
