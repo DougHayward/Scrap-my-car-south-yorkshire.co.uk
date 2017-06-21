@@ -1,7 +1,7 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 use Application\EmailController;
 
 require 'vendor/autoload.php';
@@ -68,7 +68,7 @@ if (isset($_POST['send_email'])) {
     <div class="section">
         <!--   Icon Section   -->
         <div class="row">
-            <h2 class="center">We Buy Scrap Cars</h2>
+            <h2 class="center">We Buy Cars</h2>
             <div class="col s12 m3">
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">£</i></h2>
