@@ -139,7 +139,7 @@ if (isset($_POST['send_email'])) {
             <div class="col s12 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
                 <h4>About Us</h4>
-                <p class="left-align light">Remove My Car Sheffield are one of the biggest scrap car buyers in Sheffield
+                <p class="left-align light">Remove My Car South Yorkshire are one of the biggest scrap car buyers in South Yorkshire
                     and we make every effort to ensure your vehicle is recycled in an environmentally friendly way.
                 </p>
                 <p class="left-align light">
@@ -153,7 +153,7 @@ if (isset($_POST['send_email'])) {
                 </p>
                 <p class="left-align light">
                     We buy Scrap Cars and offer a car removal service for unwanted cars. We buy Mot Failures, Accident
-                    Damaged Cars, Non Runners and in fact we will buy any Scrap Car in Sheffield and all surrounding
+                    Damaged Cars, Non Runners and in fact we will buy any Scrap Car in South Yorkshire and all surrounding
                     areas of Sheffield and South Yorkshire.
                 </p>
                 <p class="left-align light">
@@ -313,22 +313,21 @@ if (isset($_POST['send_email'])) {
                 <h5 class="white-text">Remove My Car - South Yorkshire</h5>
                 <p class="grey-text text-lighten-4"></p>
             </div>
-            <!--            <div class="col l3 s12">-->
-            <!--                <h5 class="white-text">Settings</h5>-->
-            <!--                <ul>-->
-            <!--                    <li><a class="white-text" href="#!">Link 1</a></li>-->
-            <!--                    <li><a class="white-text" href="#!">Link 2</a></li>-->
-            <!--                    <li><a class="white-text" href="#!">Link 3</a></li>-->
-            <!--                    <li><a class="white-text" href="#!">Link 4</a></li>-->
-            <!--                </ul>-->
-            <!--            </div>-->
+                        <div class="col l3 s12">
+                            <h5 class="white-text">Bio</h5>
+                            <p>Here at Remove my Car South Yorkshire we come to you at a 
+                                time that suits you, whether it be after working hours or weekends.</p>
+                            <p>All DVLA paperwork is completed for you hassle free, and payments for your 
+                                unwanted vehicle can either be paid in cash or via bank transfers.
+                            </p>
+            </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
                     <li><a class="white-text" href="https://www.instagram.com/Removemycarsy/"><i
-                                    class="ion-social-instagram small"></i> @Removemycarsy</a></li>
+                                    class="ion-social-instagram tiny"></i> removemycarsy</a></li>
                     <li><a class="white-text" href="https://twitter.com/Removemycarsy/"><i
-                                    class="ion-social-twitter small"></i>@Removemycarsy</a></li>
+                                    class="ion-social-twitter tiny"></i>@removemycarsy</a></li>
                 </ul>
             </div>
         </div>
