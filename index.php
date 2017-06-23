@@ -318,6 +318,8 @@ if (isset($_POST['send_email'])) {
                             </p>
             </div>   
             <div class="col l3 s12">
+            </div>
+                <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
                     <li><a class="white-text" href="https://www.instagram.com/Removemycarsy/"><i
