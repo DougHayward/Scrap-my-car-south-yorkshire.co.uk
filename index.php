@@ -310,7 +310,6 @@ if (isset($_POST['send_email'])) {
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">Remove My Car - South Yorkshire</h5>
                             <p class="white-text">Here at Remove my Car South Yorkshire we come to you at a 
                                 time that suits you, whether it be after working hours or weekends.</p>
                             <p class="white-text">All DVLA paperwork is completed for you hassle free, and payments for your 
