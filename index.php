@@ -16,12 +16,14 @@ if (isset($_POST['send_email'])) {
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Remove My Car - South Yorkshire</title>
+    <title>Scrap My Car in Sheffield, Doncaster, Rotherham, South Yorkshire</title>
+    <meta name="description"
+          content="Remove My Car South Yorkshire are one of the biggest scrap car buyers in Sheffield, Doncaster, Rotherham, Barnsley and South Yorkshire. Call: 07540 298942."/>
     <!-- CSS  -->
     <!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
     <!--    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>-->
-
+    <meta name="google-site-verification" content="DBY6nTLZox3cJX-RcxuSHruMHLO3HHhKwbAhEXaf9GQ"/>
     <?php include "Application/css.php"; //Cheats google page speed for 100/100 ?>
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css" rel="stylesheet"
           media="screen,projection"/>
@@ -53,9 +55,10 @@ if (isset($_POST['send_email'])) {
     <div class="section no-pad-bot">
         <div class="container">
             <br><br><br>
-            <h1 class="header center white-text text-darken-4 flow-text transparency">
+            <h1 class="header center white-text text-darken-4 flow-text transparency">Remove My Car – Scrap Car Buyers in Sheffield, Doncaster, Rotherham and South Yorkshire</h1>
+            <h3 class="header center white-text text-darken-4 flow-text transparency">
                 <!--                We Buy Scrap Cars in South Yorkshire<br>-->
-                Call us now on <a href="tel:07540298942">07540 298942</a></h1>
+                Call us now on <a href="tel:07540298942">07540 298942</a></h3>
             <div class="row center">
                 <a href="#contact-us" id="download-button"
                    class="btn-large waves-effect waves-light blue lighten-1">Get a quote Online NOW.</a>
@@ -68,16 +71,12 @@ if (isset($_POST['send_email'])) {
     <div class="section">
         <!--   Icon Section   -->
         <div class="row">
-            <h2 class="center">We Buy Cars</h2>
+            <h2 class="center">We Buy Scrap Cars For Cash in Sheffield and South Yorkshire</h2>
             <div class="col s12 m3">
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">£</i></h2>
                     <h5 class="center">Best Price</h5>
-                    <p class="light">As one of the best-known buyers of scrap cars in South Yorkshire we are always
-                        looking to give the most for cars at the end of their life. So whether your car is accident
-                        damaged or irreparable mechanically or otherwise we will buy and offer you the best price in
-                        South Yorkshire. Our business is buying scrap cars, that’s why we will give you the best price
-                        on your car for scrap.</p>
+                    <p class="light">As one of the best-known buyers of scrap cars in South Yorkshire we are always looking to give the most for cars at the end of their life. So, whether your car is accident damaged or irreparable mechanically or otherwise we will pay cash into your bank account for your old vehicle. Our scrap car buyers work throughout South Yorkshire and will ensure that you get the best price for your unwanted vehicle, and there’s no need to bring it to our car scrap yard as we’ll be happy to collect it from you for free.</p>
                 </div>
             </div>
 
@@ -85,9 +84,7 @@ if (isset($_POST['send_email'])) {
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">directions_car</i></h2>
                     <h5 class="center">For Cash</h5>
-                    <p class="light">Do you want to scrap your car for cash in South Yorkshire? Do you want a good price
-                        for your scrap car in South Yorkshire? If yes then we are here to help you to provide you with a
-                        professional scrap car collection service in South Yorkshire.</p>
+                    <p class="light">Do you want to scrap your car for cash in South Yorkshire? Do you want to get the best price for your scrap car? We are one of the leading car scrap yards in Sheffield and South Yorkshire and provide a professional scrappage service to our customers. From small vans and large commercial vehicles to minibuses and compact cars, our scrap car buyers will give you the best price for your unwanted automobiles.</p>
                 </div>
             </div>
 
@@ -95,24 +92,14 @@ if (isset($_POST['send_email'])) {
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">local_shipping</i></h2>
                     <h5 class="center">Collections</h5>
-                    <p class="light">We collect scrap cars, unwanted cars, accident damaged cars, MOT failures and scrap
-                        commercial vehicles, and we also dispose of your vehicle in the legal way, filling out all of
-                        the required DVLA paperwork. We don't care if your MOT has expired or if you are trying to sell
-                        your written off car. You can sell us your car with no tax or mot. Scrap Car Collection Scrap a
-                        Car for Cash Scrap Car Services We will satisfy you in all kind of scrap cars collections
-                        services or car breakdown cover.</p>
+                    <p class="light">At Remove my Car we have a large car scrap yard in Sheffield where we are able to process scrap cars, unwanted cars, accident damaged cars, MOT failures and scrap commercial vehicles. All vehicles are disposed of in the legal way, with all details being registered and processed via the DVLA to notify them that the vehicle is being scrapped. We cover the whole of South Yorkshire including Rotherham, Doncaster, Barnsley, Sheffield, Chesterfield and the surroundings towns. Give us a call today to get the best price and scrap your car for cash.</p>
                 </div>
             </div>
             <div class="col s12 m3">
                 <div class="icon-block">
                     <h2 class="center blue-text text-lighten-1"><i class="material-icons">mood</i></h2>
                     <h5 class="center">Removal</h5>
-                    <p class="light">We offer a first class scrap car removal, collection and disposal in South
-                        Yorkshire and
-                        can offer good prices for your scrap car today. As one of the best known scrap car breakers in
-                        South Yorkshire we can dispose of your unwanted scrap car, we offer scrap car collection in
-                        South Yorkshire
-                        and the surrounding areas.</p>
+                    <p class="light">We are scrap car buyers and offer a full collection and disposal service in Sheffield and throughout South Yorkshire. As one of the best car scrap yards in the area we provide our customers with a first-class service with collection at a time that’s convenient for you. Want to find out “How to scrap my car for cash?”, we are the people to speak with. We offer fast secure payment on collection for your car with payments direct to your bank account.</p>
                 </div>
             </div>
         </div>
@@ -138,40 +125,28 @@ if (isset($_POST['send_email'])) {
         <div class="row">
             <div class="col s12 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
-                <h4>About Us</h4>
-                <p class="left-align light">Remove My Car South Yorkshire are one of the biggest scrap car buyers in South Yorkshire
-                    and we make every effort to ensure your vehicle is recycled in an environmentally friendly way.
+                <h4>About Remove My Car South Yorkshire</h4>
+                <p class="left-align light">Remove My Car South Yorkshire are one of the largest scrap car buyers in Sheffield and across South Yorkshire. We pride ourselves on offering our customers a professional service for both cars and vans as well as commercial vehicles. All vehicles that we purchase are recycled in-line with scrap guidelines and in an environmentally friendly way.
                 </p>
                 <p class="left-align light">
                     We purchase the vehicle from you. This ensures that you are no longer responsible for it and do not
                     have to worry about any vehicle scrapping procedures you would normally be responsible for.
                 </p>
                 <p class="left-align light">
-                    After inspection of the vehicle we will offer you the best possible price for your vehicle and
-                    remove it from your premises, ensuring all parts are recycled responsibly, legally and in an
-                    environmentally friendly way.
+                    As a registered car scrap yard, we take care of all the paperwork and send this off to the DVLA to confirm that you are no longer the registered owner of the vehicle and that it is being scrapped. Looking to scrap your car for cash in Sheffield, Doncaster, Rotherham or Barnsley? We will give you a great price for your unwanted, non-runner, accident damaged or MOT failure.
                 </p>
                 <p class="left-align light">
-                    We buy Scrap Cars and offer a car removal service for unwanted cars. We buy Mot Failures, Accident
-                    Damaged Cars, Non Runners and in fact we will buy any Scrap Car in South Yorkshire and all surrounding
-                    areas of Sheffield and South Yorkshire.
+                    We guarantee that we’ll purchase your car when we say we will and following an inspection by one of our expert team we’ll make you an offer based on the scrap value of the car – this is guaranteed to be the best price in the area. Following payment, we’ll take the car away and ensure that all parts are recycled responsibly, legally and in an environmentally friendly way.
                 </p>
-                <p class="left-align light">
-                    Call now and you could get money for your scrap car today. Or fill out the online form for a call
-                    back with a quote for your scrap car.
-                </p>
-                <p class="left-align light">
-                    If you have a scrap car for sale in Sheffield, we offer free collection of Scrap Cars and there are
-                    no hidden fees when you scrap a car with us. We are fully insured and pay cash for scrap cars in
-                    Sheffield and throughout South Yorkshire.
-                </p>
-                <a id="contact-us"></a>
-                <p class="left-align light">
-                    If you have any questions about our vehicle recycling or about anything you are not sure of we would
-                    be happy to talk to you, call us on <a href="tel:07540 298942">07540 298942</a>.</p>
+                <h4>Can I scrap my car for cash?</h4>
+                <p class="left-align light">It is no longer possible to get cash for your scrap car. As one of the best car scrap yards in Sheffield we buy end of life cars, vans, and commercial vehicles and offer the very best prices in South Yorkshire. From MOT failures and accident damaged cars, to non-runners and vehicles that aren’t worth repairing, our team of scrap car buyers will give you a great price for your unwanted vehicles.</p>
+                <p class="left-align light">We offer free vehicle collection in Doncaster, Rotherham, Barnsley, Chesterfield, Sheffield and further afield so get in touch today to find out more. Give us a call to find out the price that we’ll pay for your scrap car. </p>
+                <p class="left-align light">If you want to scrap your car for cash then we can help. The price we quote is the price that we’ll pay, and we offer free collection within South Yorkshire. There are no hidden fees and because we are a licensed car scrap yard you can be sure that we’ll dispose of your vehicle responsibly.</p>
+                <p class="left-align light">If you have any questions about our vehicle recycling or about anything you are not sure of we would be happy to talk to you, call us on <a href="tel:07540 298942">07540 298942</a>.</p>
             </div>
         </div>
         <hr>
+
         <div class="row">
             <div class="col s12 center">
                 <h4>Get a Quote</h4>
@@ -209,7 +184,7 @@ if (isset($_POST['send_email'])) {
                         <h3>A little about the car.</h3>
                         <div class="row">
                             <div class="input-field col s6">
-                                <select class="validate" id="car_make" required  name="car_make">
+                                <select class="validate" id="car_make" required name="car_make">
                                     <option disabled selected>Choose the make.</option>
                                     <option value="AC">AC</option>
                                     <option value="Alfa Romeo">Alfa Romeo</option>
@@ -277,7 +252,7 @@ if (isset($_POST['send_email'])) {
                         </div>
                         <div class="row">
                             <div class="input-field col s6">
-                                <select class="validate" name="car_runner"  required id="car_runner">
+                                <select class="validate" name="car_runner" required id="car_runner">
                                     <option disabled selected>Is it a runner?</option>
                                     <option value="Yes">Yes</option>
                                     <option value="No">No</option>
@@ -286,7 +261,8 @@ if (isset($_POST['send_email'])) {
                             </div>
                         </div>
                         <div class="row">
-                            <button type="submit" name="send_email" class="btn-large waves-effect waves-light blue lighten-1"><i
+                            <button type="submit" name="send_email"
+                                    class="btn-large waves-effect waves-light blue lighten-1"><i
                                         class="material-icons left">send</i>Request Quote Now
                             </button>
                         </div>
@@ -310,15 +286,15 @@ if (isset($_POST['send_email'])) {
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                            <p class="white-text">Here at Remove my Car South Yorkshire we come to you at a 
-                                time that suits you, whether it be after working hours or weekends.</p>
-                            <p class="white-text">All DVLA paperwork is completed for you hassle free, and payments for your 
-                                unwanted vehicle can either be paid in cash or via bank transfers.
-                            </p>
-            </div>   
+                <p class="white-text">Here at Remove my Car South Yorkshire we come to you at a
+                    time that suits you, whether it be after working hours or weekends.</p>
+                <p class="white-text">All DVLA paperwork is completed for you hassle free, and payments for your
+                    unwanted vehicle can either be paid in cash or via bank transfers.
+                </p>
+            </div>
             <div class="col l3 s12">
             </div>
-                <div class="col l3 s12">
+            <div class="col l3 s12">
                 <h5 class="white-text">Connect</h5>
                 <ul>
                     <li><a class="white-text" href="https://www.instagram.com/Removemycarsy/"><i
