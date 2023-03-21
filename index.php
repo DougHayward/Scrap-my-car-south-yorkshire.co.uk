@@ -147,7 +147,7 @@ if (isset($_POST['send_email'])) {
         </div>
         <hr>
 
-        <div class="row">
+        <div class="row" id="contact-us">
             <div class="col s12 center">
                 <h4>Get a Quote</h4>
                 <p>Fill the form out below in order to get a free no obligation quote from a member of our specialist
